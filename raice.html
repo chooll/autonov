@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автовокзал</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets\style\style.css">
+  <link rel="icon" href="assets/image/bus_icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets\style\style_mobile.css">
+  <link rel="stylesheet" href="assets/style/style_voyage.css">
+</head>
+
+<script>
+   $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top -200;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+});
+</script>
+
+<body>
+   <header>
+      <section class="container">
+        
+        <section id="menu" class="menu_wrap jc-sb">        
+         <a href="#" class="logo">Авто Нов</a>
+          <nav>
+              <a href="index.html">Главная</a>
+              <a href="#">О нас</a>
+              <a href="raice.html">Купить</a>
+              <a href="#">Лицензии</a>
+              <a href="registration.html">Вход</a>
+          </nav>
+        </section>     
+   </section>
+   </header>
+   <section class="container">
+      <h2 class="hCustom bottom-border">Выберите рейс</h2>
+      <section class="voyage grid-auto">
+         <a href="buy_ticket.html">Великий Новгород - Хвойная</a>
+         <a href="buy_ticket.html">Хвойная - Великий Новгород</a>
+         <a href="buy_ticket.html">Великий Новгород - Москва</a>
+         <a href="buy_ticket.html">Великий Новгород - Санкт-Петербург</a>
+         <a href="buy_ticket.html">Пестово - Великий Новгород</a>
+         <a href="buy_ticket.html">Окуловка - Великий Новгород</a>
+         <a href="buy_ticket.html">Москва - Великий Новгород</a>
+         <a href="buy_ticket.html">Пестово - Москва</a>
+         <a href="buy_ticket.html">Хвойная - Москва</a>
+         <a href="buy_ticket.html">Окуловка - Санкт-Петербург</a>
+         <a href="buy_ticket.html">Окуловка - Великий Новгород</a>
+         <a href="buy_ticket.html">Великий Новгород - Санкт-Петербург</a>
+         <a href="buy_ticket.html">Великие Луки - Великий Новгород</a>
+         <a href="buy_ticket.html">Окуловка - Великий Новгород</a>
+         <a href="buy_ticket.html">Москва - Великий Новгород</a>
+         <a href="buy_ticket.html">Москва - Санкт-Петербург</a>
+         <a href="buy_ticket.html">Хвойная - Москва</a>
+         <a href="buy_ticket.html">Хвойная - Санкт-Петербург</a>
+         <a href="buy_ticket.html">Окуловка - Великий Новгород</a>
+
+
+
+      </section>
+   </section>
+
+
+</body>
+</html>

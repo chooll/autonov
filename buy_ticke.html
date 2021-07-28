@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автовокзал</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets\style\style.css">
+  <link rel="icon" href="assets/image/bus_icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets\style\style_mobile.css">
+  <link rel="stylesheet" href="assets/style/style_voyage.css">
+  <link rel="stylesheet" href="assets/style/style_ticket.css">
+</head>
+
+<script>
+   $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top -200;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+});
+</script>
+
+<body>
+   <header>
+      <section class="container">
+        
+        <section id="menu" class="menu_wrap jc-sb">        
+         <a href="#" class="logo">Авто Нов</a>
+          <nav>
+              <a href="index.html">Главная</a>
+              <a href="#">О нас</a>
+              <a href="raice.html">Купить</a>
+              <a href="#">Лицензии</a>
+              <a href="registration.html">Вход</a>
+          </nav>
+        </section>     
+   </section>
+   </header>
+
+
+   <section class="container">
+      <h2 class="hCustom">Великий Новгород - Хвойная</h2>
+
+      <section class="ticket"> 
+         <section class="photo">
+            <img src="assets/image/хвойная.jpg" alt="" id="ticketPhoto">
+            <h2 class="text_block">Похожие маршруты</h2>
+            <section class="allroutes">
+               <img src="assets/image/окуловка.jpg" alt="">
+               <img src="assets/image/москва.jpg" alt="">
+               <img src="assets/image/пестово.jpg" alt="">
+               <img src="assets/image/псков.jpg" alt="">
+            </section>
+         </section>
+         
+
+         
+
+         <section class="userblock">   
+            <h2 class="text_block">Введите кол-во мест</h2>
+            <input type="text" placeholder="введите кол-во мест">
+            <h2 class="text_block">Выбери дату</h2>
+            <input type="date" placeholder="выберите дату">
+            <h2 class="text_block">Выберите времени</h2>
+            <input type="time" placeholder="выберите дату">
+
+            <h2 class="text_block">Выберите автомобиль</h2>
+            <section class="auto">
+               <arcticle class="autoBlock">
+                  <img src="assets\image\bus.png" alt="">
+                  <p>Mersedes Benc</p>
+                </arcticle>
+            
+                <arcticle class="autoBlock">
+                  <img src="assets\image\bus.png" alt="">
+                  <p>Mersedes Benc</p>
+                </arcticle>
+            
+                <arcticle class="autoBlock">
+                  <img src="assets\image\bus.png" alt="">
+                  <p>Mersedes Benc</p>
+                </arcticle>
+            </section>
+            
+            <article class="cost_ticket">
+               <h2 class="text_block">Стоимость билета:</h2>
+               <h2 class="text_block">520 руб.</h2>
+            </article>
+            
+            <button class="buy_ticket">Купить билет</button>
+         </section>
+         
+
+      </section>
+   </section>
+
+   <footer>
+      <section class="container auto_grid">
+    
+        <section class="footer_block">
+          <h2>Компания</h2>
+          <a href="#">О нас</a></br>
+          <a href="#">Расположение</a></br>
+          <a href="#">Лицензии</a>
+        </section>
+    
+        <section class="footer_block">
+          <h2>Услуги</h2>
+          <a href="#">Перевозки</a></br>
+          <a href="#">Прайс-Лист</a></br>
+          <a href="#">Заказы</a>
+        </section>
+    
+        <section class="footer_block">
+          <h2>Компания</h2>
+          <a href="#">О нас</a></br>
+          <a href="#">Расположение</a></br>
+          <a href="#">Лицензии</a>
+        </section>
+    
+        <section class="footer_block">
+          <h2>Компания</h2>
+          <a href="#">О нас</a></br>
+          <a href="#">Расположение</a></br>
+          <a href="#">Лицензии</a>
+        </section>
+          
+      </section>
+    </footer>
+
+
+</body>
+</html>

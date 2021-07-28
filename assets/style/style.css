@@ -1,0 +1,364 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   transition: .3s;
+ }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ h2 {
+  margin: 0px;
+  color: #99738E;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container { 
+   width: 1400px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-beetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hCustom {
+   color: #242582;
+   font-family: 'Roboto Condensed', sans-serif;
+   margin-top: 35px;
+   margin-bottom : 35px;
+ }
+
+ /* Верхняя панель начало */
+
+.logo {
+  font-size: 20px;
+  text-align: center;
+  color: #F64C72;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 700;
+}
+
+ header {
+  font-family: 'Roboto Condensed';
+  background-color: #242582;
+  align-items: center;
+}
+
+nav {
+  display: flex ;
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+}
+.menu-icon {
+  font-size: 2.4em;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+  
+  .menu-icon {
+    display: none;
+  }
+
+}
+ /* Панель с фото и информацией начало */
+ .panelFastInfo {
+   background-image: url(../image/пейзаж.jpg);
+   height: 300px;
+   margin: 0;
+   justify-content: center;
+ }
+
+ .textBlock {
+   color: white;
+   margin: 0;
+   font-family: 'Roboto Condensed', sans-serif;
+ }
+ 
+ .textBlock > p {
+   color: white;
+   margin: 0px;
+   padding: 30px;
+   font-family: 'Roboto Condensed';
+   width: 55%;
+   text-align: justify;
+ }
+
+ /* Панель с фото конец */
+ 
+ 
+ /* Маршруты  Начало*/
+ 
+ .routes {
+   margin-bottom: 30px;
+ }
+
+ .blockRoutes {
+   display: grid;   
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 12px;
+   grid-auto-flow: dense;
+   align-items: center;
+   margin: 0 auto;
+   justify-content: center;
+   
+ }
+
+.routes_block {
+   margin: 0 auto;
+}
+
+.routes_block > img :hover {
+  filter: drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25)), drop-shadow(-4px -4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.routes_block > p{ 
+   font-family: 'Roboto Condensed';
+   font-weight: 700;
+   color: #242582;
+   text-align: center;
+   margin: 0px auto;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+ 
+ .routes_block > img {
+   height: 250px;
+   width: 211px;
+   margin: 20px;
+   border-radius: 5px;
+   border: 1px solid #242582;
+   margin-bottom: 10px;
+}
+ 
+ /* Маршруты Конец */
+ 
+ 
+ /* Панелька покупки билета Начало */
+ 
+ .buyTicketBar { 
+   background: #242582;
+   color: white;
+   margin: 0px;
+  }
+ 
+.f_bus {
+  height: 10%;
+}
+
+.buyTicketBar {
+  overflow-x: hidden;
+}
+
+ .buttonType { 
+   background: #F64C72;
+   padding: 10px;
+   margin: 0;
+   border-radius: 10px;
+   font-family: 'Roboto Condensed';
+   color: white; 
+   text-decoration: none;
+ }
+ 
+ .text{
+   color: white;
+   margin: 0px;
+   margin-left: 105px;
+   padding-top: 300px;
+   width: 20%;
+ }
+ 
+ /* Панелька покупки Конец */
+
+ /* Лицензии Начало*/
+.licence {
+  margin: 0px auto;
+  display: grid;   
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 12px;
+  grid-auto-flow: dense;
+
+}
+
+.imageLicence { 
+  display: inline-grid;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+.imageLicence > p {
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Roboto Condensed';
+  width: 65%;
+  color: #242582;
+}
+
+.imageLicence > img{ 
+  margin: 0 auto;
+  width: 60%;
+}
+
+ /* Лицензия Конец */
+
+
+ /* Автомобили Начало*/
+.outAuto {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;   
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 12px;
+  grid-auto-flow: dense;
+}
+
+.autoBlock {
+  display: inline-grid;
+  margin: 15px;
+
+}
+
+.autoBlock > p {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: 'Roboto Condensed';
+  color: #242582;
+}
+.autoBlock > img { 
+  width: 95%;
+}
+
+ /* Автомобили Конец */
+
+/* Footer */
+
+ footer {
+   display: grid;
+   background: #242582;
+   color: white;
+   font-family: 'Roboto Condensed';
+   margin: 0px;
+   margin-top: 60px;
+   justify-content: center;
+  }
+
+.auto_grid {
+  display: grid;   
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 12px;
+  grid-auto-flow: dense;
+}
+
+.footer_block {
+  padding: 20px;
+}
+
+.footer_block > a {
+  margin: 10px auto;
+}
+
+.footer_block > h2 {
+  color: white;
+}
+
+/* Footer End */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  * { 
+    margin: 0px;
+  }
+
+  .text {
+    width: 100%;
+    text-align: justify;
+    margin: 10px  auto;
+  }
+  .container {
+    width: 500px;
+  }
+
+  .textBlock > p {
+    width: 100%;
+  }
+  
+  .routes_block > p {
+    font-size: 14px;
+  }
+
+  .routes_block > img {
+    height: 100px;
+    width: 100px;
+   
+  }
+
+  .blockRoutes {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .outAuto {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    gap: 10px;
+    /* padding: 5px; */
+  }
+
+  .jc-sb {
+    display: block;
+  }
+
+  .hCustom {
+    text-align: center;
+  }
+  
+
+}

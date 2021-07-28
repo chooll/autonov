@@ -1,0 +1,139 @@
+* { 
+   margin: 0;
+   transition: .3s;
+}
+
+body {
+   font-family: 'Roboto Condensed';
+}
+
+h2 {
+   display: flex;
+   justify-content: center;
+   color: white;
+   font-size: 48px;
+   font-weight: 700;
+   padding: 10px;
+}
+
+.registBlock {
+   width: 40%;
+   background: #242582;
+   justify-content: center;
+   height: 1010px;
+}
+
+#bRegist {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   text-align: center;
+   color: white;
+   padding-left: 30px;
+   padding-right: 30px;
+   border: 4px solid #F64C72;
+   font-size: 34px;
+   background: #F64C72;
+   border-radius: 15px;
+}
+
+#bRegist:hover { 
+   transition: 0.1s;
+   background: none;
+}
+
+.check {
+   margin: 20px auto;   
+   display: flex;
+   justify-content: space-between;
+   color: white;
+}
+#usl {
+   margin: 0 auto;
+   margin-right: 0;
+   width: 3%;
+   border-radius: 20px;
+}
+
+#usl_label {
+   margin: 0px auto;
+   width: 60%;
+}
+
+.back_image > img{
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   width: 100%;
+}
+
+input { 
+   display: block;
+   font-size: 24px;
+   padding: 20px;
+   margin: 20px auto;
+   width: 73%;
+   border: 3px solid white;   
+   border-radius: 15px;
+   color: white;
+   background: none;
+   justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+   input {
+      padding: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      font-size: 18px;
+      padding-right: 20px;
+   }
+}
+@media screen and (max-width: 1000px) {
+   .registBlock {
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+   }
+   h2 {
+      margin: 0px auto;
+      text-align: center;
+      padding: 0;
+      padding-top: 20px;
+      padding-bottom: 20px; 
+   }
+   
+   input {
+      display: block; 
+      padding: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      font-size: 18px;
+      padding-right: 20px;
+      margin: 20px auto;
+      /* align-text: center; */
+      justify-content: center;
+      /* width: 100%; */
+      justify-content: center;
+   }
+
+   #bRegist { 
+      display: block;
+      margin: 0 auto;
+      width: 85%;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      background: #F64C72;
+      border-radius: 15px;
+   }
+
+   #bRegist:hover { 
+      font-size: 24px;
+      
+   }
+}

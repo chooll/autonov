@@ -1,0 +1,25 @@
+a {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.bottom-border {
+   padding-bottom: 30px;
+   border-bottom: 5px solid #242582;
+}
+
+.hCustom {
+   width: 100%;
+}
+
+.grid-auto {
+   display: grid;   
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 12px;
+}
+
+.voyage > a {
+   padding: 10px;
+   background-color: #242582;
+   border-radius: 10px;
+}
